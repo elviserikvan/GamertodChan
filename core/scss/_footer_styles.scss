@@ -1,0 +1,22 @@
+footer {
+	width: 100%;
+	padding: 1em;
+	
+	p {
+		margin: auto;
+		display: block;
+		max-width: 80%;
+		font-size: 11px;
+		text-align: center;
+	}
+
+		
+	.links {
+		margin-top: 1em;
+		text-align: center;
+		
+		// Add the styles for the links
+		@include links_general_styles(inline);
+	}
+
+}

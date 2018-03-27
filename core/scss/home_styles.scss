@@ -1,0 +1,123 @@
+
+
+// Import general styles
+@import 'general_styles';
+
+
+// h3 genetal styles
+%h3_general_styles {
+	color: $dark_red;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+		
+
+body {
+	font-size: 14px;
+	
+
+	header {
+		width: 100%;
+
+		h1 {
+			color:#DE0000;
+			font-size: 50px;
+			margin: 20px 0px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.description {
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+			background-color: $chan_bg_1;
+			@extend %border-styles;
+		}
+
+		nav {
+			width: 80%;
+			display: flex;
+			margin:10px auto;
+			@extend %border-styles;
+			justify-content: space-around;
+
+			.regional,
+			.interes {
+
+				// This add the styles for the links
+				@include links_general_styles(block);
+
+				h3 {
+					font-size: 17px;
+					margin-bottom: 10px;
+					@extend %h3_general_styles;
+				}
+			}
+		}
+	}
+
+	main {
+		width: 80%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+
+		.side_info {
+			width: 21%;
+			height: 20%;
+			@extend %border-styles;
+
+			span {
+				@extend %h3_general_styles;
+			}
+		}
+
+		.last_posts {
+			width: 57%;
+			@extend %border-styles;
+		
+			// Styles por the links
+			@include links_general_styles(block);
+
+		}
+
+		.random_images {
+			width:21%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			@extend %border-styles;
+
+			img {
+				margin: 10px 0;
+				height: 100px;
+			}
+
+			h3 {
+				@extend %h3_general_styles;
+				text-align: center;
+			}
+		}
+
+		.no_images {
+
+			h2 {
+				font-size: 16px;
+			}
+		}
+
+		.no_posts {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			widht:100%;
+			height: 100%;
+		}
+	}
+	
+	// Footer styles
+	@import 'footer_styles';
+}

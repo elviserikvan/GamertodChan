@@ -1,0 +1,23 @@
+
+// include general styles
+@import 'general_styles';
+
+main {
+
+	color: $dark_red;
+	text-align: center;
+
+	h2 {
+	}
+
+	.rules {
+		margin: 1em 0;
+
+		ul {
+			width: 35%;
+			display: block;
+			margin:1em auto;
+			text-align: left;
+		}
+	}
+}

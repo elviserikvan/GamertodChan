@@ -1,0 +1,28 @@
+#Turn on Rewriting Engine
+RewriteEngine On
+
+RewriteRule %{SCRIPT_FILENAME} !-d
+RewriteRule %{SCRIPT_FILENAME} !-f
+
+#########################
+# Friendly url settings #
+#########################
+
+# This redirect us to the home
+RewriteRule ^home$ ./index.php
+
+# this redirect us to the php file to add another thread
+RewriteRule ^new_thread$ ./core/config_files/new_thread.php
+
+#this redirect the user to create a new reply
+RewriteRule ^new_reply$ ./core/config_files/new_reply.php
+
+
+# This redirect us to a table
+RewriteRule ^([a-zA-Z0-9]+)/?$ ./index.php?table=$1 
+
+# this redirect us to a specific thread
+RewriteRule ^([a-zA-Z]+)/([0-9]+)$ ./index.php?table=$1&thread=$2
+
+# This line of code opens a picture in the browser
+RewriteRule ^picture/([a-zA-Z0-9\._]+)$ ./app/img\'s/$1

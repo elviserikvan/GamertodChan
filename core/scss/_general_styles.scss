@@ -1,0 +1,104 @@
+
+
+//------Styles------//
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #FFFFEE;
+
+	// Styles for all hr tags in the page
+	hr {
+		height: 1px;
+		width: 98%;
+		border: none;
+		color:#C4A38E;
+		margin: 5px auto;
+		background-color: #C4A38E;
+	}	
+
+}
+
+
+//-------Variables-------// 
+// kind of rose Background
+$chan_bg_1: #F2E1D6;
+
+// dark_red color
+$dark_red: #800000;
+
+
+//--------Clasess to extend from--------//
+
+// Style to control the border styles
+%border-styles {
+	padding: 1em 1.5em;
+	border-radius: 5px;
+	border:1px solid #DDBEAB;
+}
+
+.hide {
+	display: none;
+}
+
+.small {
+	max-width: 250px;
+}
+
+.large {
+	max-width: 90%;
+}
+
+
+.not_found {
+	width: 90%;
+	color: $dark_red;
+	margin: 1em auto;
+	text-align: center;
+	@extend %border-styles;
+} 
+
+.error_wrap {
+	width: 90%;
+	margin: 1em auto;
+	@extend %border-styles;
+	background-color: $chan_bg_1;
+
+	h2 {
+		color: $dark_red;
+		text-align: center;
+	}
+}
+
+.info_wrap {
+	@extend .error_wrap;
+
+	h2 {
+		margin-bottom: 20px;
+	}
+}
+
+ //-------General Mixins------//
+
+// Links general styles
+@mixin links_general_styles($display) {
+	a {
+		color: #E60000;
+		display: $display;
+		line-height: 1.5em;
+		text-decoration: none;
+	}
+
+	a:hover {
+	 	color:#1f8f2a;
+	}
+}
+
+
+// We add the model to reply any thread
+@import 'model_styles';
