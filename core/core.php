@@ -22,6 +22,7 @@
 	define('DB_HOST', '127.0.0.1');
 	define('DB_NAME', 'gamertodchan');
 
+
 	// Developing constants
 	define('THREADS_RELLENO', 'app/overall/threads_relleno.php');
 

@@ -1,4 +1,4 @@
-# GammertodChan
+# GamertodChan
 
 Este es un tablon de imagenes anonimo solo por mi persona, me base en el funcionamiento de y el diseño de Hispachan para crear este tablon de imagenes. Ni mucho menos es identico ni tampoco es mejor que Hispachan. Es solo un tablon de imagenes anonimo como ya dije que relize para recordar un poco de mis conocimientos en php.
 
