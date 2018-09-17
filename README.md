@@ -24,3 +24,6 @@ Este es un tablon de imagenes anonimo solo por mi persona, me base en el funcion
 ### ¿Por que hago un repositorio?
 
 La verdad es que llevo un tiempo en esto de la programacion para paginas web y no conozco a muchas personas que lo hacen, y me gustaria recibir un poco de feedback, y a la falta de un amigo o profesor programador, tengo a internet. Y esa es la razon de este repositorio, recibir feedback, asi que si sientes que puedo mejorar en algo, sientete libre de decirlo
+
+### Screenshot
+![Home Page](https://github.com/GamertodArk/GamertodChan/blob/master/screenshot/home-page.png)
